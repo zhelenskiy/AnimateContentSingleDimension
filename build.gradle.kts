@@ -8,7 +8,7 @@ val GITHUB_TOKEN: String by project
 publishing {
     repositories {
         maven {
-            name = "AnimateContentSingleDimension"
+            name = "animate-content-single-dimension"
             url = uri("https://maven.pkg.github.com/zhelenskiy/AnimateContentSingleDimension")
             credentials {
                 username = GITHUB_USER
