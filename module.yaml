@@ -1,0 +1,12 @@
+product:
+  type: lib
+  platforms: [
+    js, jvm, android, macosX64, macosArm64, iosArm64, iosSimulatorArm64, iosX64,
+  ]
+
+dependencies:
+  - $compose.animation
+
+settings:
+  compose:
+    enabled: true
