@@ -11,7 +11,6 @@ version = "0.0.1-SNAPSHOT"
 publishing {
     repositories {
         maven {
-            name = "animate-content-single-dimension"
             url = uri("https://maven.pkg.github.com/zhelenskiy/AnimateContentSingleDimension")
             credentials {
                 username = GITHUB_USER
