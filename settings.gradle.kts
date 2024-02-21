@@ -1,3 +1,5 @@
+rootProject.name = "animate-content-single-dimension"
+
 pluginManagement {
   repositories {
     mavenCentral()
