@@ -11,6 +11,10 @@ jobs:
   build:
 
     runs-on: macos-latest
+    
+    permissions:
+      contents: read
+      packages: write
 
     steps:
       - name: checkout
