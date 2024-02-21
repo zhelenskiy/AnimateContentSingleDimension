@@ -121,7 +121,7 @@ private class IntAnimationModifier(
     val animSpec: AnimationSpec<Int>,
     val scope: CoroutineScope,
     private val animationDirection: AnimationDimension,
-) : LayoutModifierWithPassThroughIntrinsics() {
+) : PrivateLayoutModifierWithPassThroughIntrinsics() {
     var listener: ((startSizeDimension: Int, endSizeDimension: Int) -> Unit)? = null
 
     data class AnimData(
@@ -172,7 +172,7 @@ private class IntAnimationModifier(
     }
 }
 
-internal abstract class LayoutModifierWithPassThroughIntrinsics : LayoutModifier {
+private abstract class PrivateLayoutModifierWithPassThroughIntrinsics : LayoutModifier {
     final override fun IntrinsicMeasureScope.minIntrinsicWidth(
         measurable: IntrinsicMeasurable,
         height: Int
