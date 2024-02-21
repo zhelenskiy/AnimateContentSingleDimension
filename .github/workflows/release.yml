@@ -22,7 +22,9 @@ jobs:
           java-version: 17
 
       - name: Build
-        run: ./gradlew assemble --stacktrace -PGITHUB_USER=${{ secrets.CURRENT_GITHUB_USER }} -PGITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
+        run: ./gradlew assemble --stacktrace
 
       - name: Release library
-        run: ./gradlew publish -PGITHUB_USER=${{ secrets.CURRENT_GITHUB_USER }} -PGITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
+        run: ./gradlew publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
