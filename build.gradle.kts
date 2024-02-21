@@ -5,6 +5,9 @@ plugins {
 val GITHUB_USER: String by project
 val GITHUB_TOKEN: String by project
 
+group = "animate-content-single-dimension"
+version = "0.0.1-SNAPSHOT"
+
 publishing {
     repositories {
         maven {
