@@ -1,7 +1,7 @@
 product:
   type: lib
   platforms: [
-    js, jvm, android, macosX64, macosArm64, iosArm64, iosSimulatorArm64, iosX64,
+    js, jvm, android, macosX64, macosArm64, iosArm64, iosSimulatorArm64, iosX64, wasm
   ]
 
 dependencies:
@@ -10,3 +10,4 @@ dependencies:
 settings:
   compose:
     enabled: true
+    version: 1.6.1
